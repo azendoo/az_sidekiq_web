@@ -13,4 +13,6 @@ Sidekiq.configure_client do |config|
 end
 
 require 'sidekiq/web'
+require 'sidekiq/cleaner'
+require 'sidekiq/az_sidekiq'
 run Sidekiq::Web
